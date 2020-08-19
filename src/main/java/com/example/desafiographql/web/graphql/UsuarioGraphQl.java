@@ -15,10 +15,11 @@ public class UsuarioGraphQl implements GraphQLMutationResolver, GraphQLQueryReso
     @Autowired
     private UsuarioService usuarioService;
 
-    public void createUsuario(Usuario usuario){
-        usuarioService.createUsuario(usuario);
+    public Usuario createUsuario(Usuario usuario){
+        return usuarioService.createUsuario(usuario);
     }
-//    public Optional<Usuario> findUsuario(String email){
-//        return usuarioService.findUsuarioByEmail(email);
-//    }
+
+    public Optional<Usuario> findUsuario(String email){
+        return usuarioService.findUsuarioByEmail(email);
+    }
 }

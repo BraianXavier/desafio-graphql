@@ -14,12 +14,13 @@ public class UsuarioService {
     @Autowired
     private UsuarioRepository usuarioRepository;
 
-    public void createUsuario(Usuario usuario){
-        usuarioRepository.save(usuario);
+    public Usuario createUsuario(Usuario usuario){
+       return usuarioRepository.save(usuario);
     }
 
-//    public Optional<Usuario> findUsuarioByEmail(String email){
-//        return usuarioRepository.findByEmail(email);
-//    }
+
+    public Optional<Usuario> findUsuarioByEmail(String email){
+        return usuarioRepository.findByEmail(email);
+    }
 
 }
