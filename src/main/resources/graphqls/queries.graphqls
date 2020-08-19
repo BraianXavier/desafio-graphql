@@ -1,6 +1,7 @@
-type Query {
+type Query{
+    findUsuario(email:String):Usuario
+        }
 
-    }
-type Mutation{
-        createUsuario(usuario: UsuarioInput): Usuario
-    }
+        type Mutation{
+            createUsuario(usuario:UsuarioInput): Usuario
+        }

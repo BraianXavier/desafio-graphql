@@ -1,8 +1,8 @@
 type Usuario{
         email:String
-
+        name:String
         }
         input UsuarioInput{
         email:String
-
+        name:String
         }
