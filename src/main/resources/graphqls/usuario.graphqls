@@ -1,0 +1,8 @@
+type Usuario{
+        email:String
+
+        }
+        input UsuarioInput{
+        email:String
+
+        }

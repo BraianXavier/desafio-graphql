@@ -1,0 +1,6 @@
+type Query {
+
+    }
+type Mutation{
+        createUsuario(usuario: UsuarioInput): Usuario
+    }
