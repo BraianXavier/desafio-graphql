@@ -1,0 +1,13 @@
+type Tarefa{
+    id:ID
+    name:String
+    descricao:String
+    status:String
+    usuario:Usuario
+}
+
+input TarefaInput{
+    name:String
+    descricao:String
+    status:String
+}

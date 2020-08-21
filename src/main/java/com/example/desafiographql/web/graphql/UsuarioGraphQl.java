@@ -16,7 +16,7 @@ public class UsuarioGraphQl implements GraphQLMutationResolver, GraphQLQueryReso
     private UsuarioService usuarioService;
 
     public Usuario createUsuario(Usuario usuario){
-        return usuarioService.createUsuario(usuario);
+        return usuarioService.create(usuario);
     }
 
     public Optional<Usuario> findUsuario(String email){

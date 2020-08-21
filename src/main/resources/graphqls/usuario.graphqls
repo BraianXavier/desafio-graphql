@@ -1,8 +1,9 @@
 type Usuario{
         email:String
         name:String
+        tarefas:[Tarefa]
         }
-        input UsuarioInput{
+input UsuarioInput{
         email:String
         name:String
         }

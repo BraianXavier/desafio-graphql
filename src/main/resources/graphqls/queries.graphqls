@@ -1,7 +1,10 @@
 type Query{
     findUsuario(email:String):Usuario
+    findTarefa(name:String):Tarefa
         }
 
         type Mutation{
             createUsuario(usuario:UsuarioInput): Usuario
+            createTarefa(tarefa:TarefaInput,email:String): Tarefa
+            alteraStatus(id:ID , status:String): Tarefa
         }
